@@ -16,5 +16,4 @@ public class Java1 {
 		x = 2;
 		System.out.println(y + x);
 	}
-
 }
