@@ -26,21 +26,31 @@ public class Java2 {
 		System.out.println("javaにはデータ型を自動変換する機能がある。数列型にはそれぞれ箱の大きさがあり、大きい方には代入できる。\n"
 				+ "異なる型同士の計算をすると自動代入される。強制代入は使わないこと。");
 		
-		System.out.println("命令文いろいろ");
+		System.out.println("命令文、改行なし、比較、文字から整数、乱数、文字を受け取る");
 		System.out.print("この出力の仕方は前文から改行されない");
 		
 		int c = Math.max(a,b);
 		System.out.println("比較実験" + a + "と" + b + "では大きいのは" + c);
 		
-		String age = "28";
-		int aage = Integer.parseInt(age);
+		String agee = "28";
+		int aage = Integer.parseInt(agee);
 		System.out.println("私は今年" + (aage + 1) + "歳になります");
+		
+		int r = new java.util.Random().nextInt(80);
+		System.out.println("あなたの年齢はおそらく" + r + "歳ですね");
+		
+		System.out.println("１行分の文字列を入力できる。");
+		String namee = new java.util.Scanner(System.in).nextLine();
+		System.out.println("一つの整数を入力できる");
+		int aaage = new java.util.Scanner(System.in).nextInt();
+		System.out.println("ようこそ" + aaage + "歳の" + namee + "さん");
 		
 		System.out.println("練習2-1");
 		int x = 5;
 		int y = 10;
 		String ans = "x + yは" + (x + y);
 		System.out.println(ans);
+		
 		System.out.println("練習2-2");
 		System.out.println("正しい文法を選ぶ");
 		System.out.println("②④⑤⑦");
@@ -48,6 +58,19 @@ public class Java2 {
 		String s = 2 + "人目";
 		byte m = 1;
 		short n = (byte)2;
+		
+		System.out.println("練習2-3");
+		System.out.println("ようこそ占いの館へ");
+		System.out.print("あなたの名前を入力してください>");
+		String name = new java.util.Scanner(System.in).nextLine();
+		System.out.print("あなたの年齢を入力してください>");
+		String ageString = new java.util.Scanner(System.in).nextLine();
+		int age = Integer.parseInt(ageString);
+		int fortune = new java.util.Random().nextInt(4);
+		fortune++;
+		System.out.println("占いの結果がでました。");
+		System.out.println(age + "歳の" + name + "さん、あなたの運気番号は" + fortune + "です！");
+		System.out.println("(1:大吉 2:中吉 3:吉 4:凶");
 		
 	}
 }
