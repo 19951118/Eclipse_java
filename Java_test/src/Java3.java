@@ -69,13 +69,14 @@ public class Java3 {
 		//練習3-1
 		/* 
 		 * ①weight == 60
-		 * ②age1 + age2 > 60
-		 * ③age % 2 != 0
+		 * ②(age1 + age2) * 2 > 60
+		 * ③age % 2 != 0　またはage % 2 == 1
 		 * ④name.eqals("湊")
 		 */
 		//練習3-2
 		/*
 		 * C.age != 30
+		 * D.true
 		 * E.b + 5 < 20
 		 */
 		//練習3-3
@@ -86,6 +87,8 @@ public class Java3 {
 			System.out.println("お腹がいっぱいです");
 		}else {
 			System.out.println("はらぺこです");
+		}
+		if (isHungry == 1) {
 			System.out.println(food + "をいただきます");
 		}
 		System.out.println("ごちそうさまでした");
@@ -108,6 +111,8 @@ public class Java3 {
 				System.out.println("変更します");
 			}
 		}
+		//switchを変数に格納したり、Sysoutの中にそのままswitchを入れることでスッキリできる
+		
 		//練習3-6
 		System.out.println("【数あてゲーム】");
 		int ans = new java.util.Random().nextInt(10);
@@ -116,6 +121,7 @@ public class Java3 {
 			int num = new java.util.Scanner(System.in).nextInt();
 			if (num == ans) {
 				System.out.println("あたり！");
+				break;
 			}else {
 				System.out.println("違います");
 			}
