@@ -7,9 +7,9 @@ public class JavaUnbelievable {
 		for(int i = 0; i < num.length; i++) {
 			num[i] = new java.util.Random().nextInt(12);
 		}
-		for(int i = 0; i < num.length; i++) {
+		for(int value : num) {
 		char[] miracle = {'奇', '跡', '体', '験', '！','ア', 'ン', 'ビ', 'リ', 'バ', 'ボ', 'ー'};
-		System.out.print(miracle[num[i]] + " ");
+		System.out.print(miracle[value] + " ");
 		}
 
 	}
