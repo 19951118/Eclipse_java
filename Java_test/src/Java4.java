@@ -53,8 +53,53 @@ public class Java4 {
 			System.out.println(value);
 		}
 		
-	
+		int[] arrayA = {1, 2, 3};
+		int[] arrayB;
+		arrayB = arrayA;
+		arrayB[0] = 100;
+		System.out.println(arrayA[0]);
+		//配列のアドレスは代入すると同じアドレスになるため、このように代入先に変数を宣言すると代入元も変わってしまう。
+		//ブロックの中で使った配列はガレージコレクション、＝nullを使い参照を切るようにする。
 		
+		//多次元配列
+		int[][] scores5 = new int[2][3]; //2行と3列の配列
+		scores5[0][0] = 40;
+		scores5[0][1] = 50;
+		scores5[0][2] = 60;
+		scores5[1][0] = 80;
+		scores5[1][1] = 60;
+		scores5[1][2] = 70;
+		//int[][] scores5 = {{40,50,60}{80,60,70}};こちらでも可能
+		System.out.println(scores5[1][1]);
+		System.out.println(scores5.length);
+		System.out.println(scores5[0].length);
+		
+		//練習問題4-1
+		int[] points = new int[4];
+		double[] weights = new double[5];
+		boolean[] answers = new boolean[3];
+		String[] names = new String[3];
+		
+		//練習4-2
+		int[] moneyList = {121902, 8302, 55100};
+		for (int i = 0; i < moneyList.length; i++) {
+			System.out.println(moneyList[i]);
+		}
+		for ( int money : moneyList) {
+			System.out.println(money);
+		}
+		
+		//練習4-3
+		
+		//練習4-4
+		int[] numbers = {3, 4, 9};
+		System.out.println("1桁の数字を入力してください");
+		int input = new java.util.Scanner(System.in).nextInt();
+		for (int nums : numbers) {
+			if (nums == input) {
+				System.out.println("アタリ！");
+			}
+		}
 	}
 
 }
