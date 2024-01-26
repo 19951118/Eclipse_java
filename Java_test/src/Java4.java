@@ -90,6 +90,8 @@ public class Java4 {
 		}
 		
 		//練習4-3
+		//Null PointerException
+		//ArrayIndexOutOfBoundsExceoption
 		
 		//練習4-4
 		int[] numbers = {3, 4, 9};
