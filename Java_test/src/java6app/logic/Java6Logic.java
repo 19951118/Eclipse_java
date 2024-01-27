@@ -1,4 +1,4 @@
-
+package java6app.logic;
 public class Java6Logic {
 
 	public static int tasu(int a,int b) {
