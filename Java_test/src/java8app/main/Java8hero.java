@@ -1,4 +1,4 @@
-
+package java8app.main;
 public class Java8hero {
 	/*フィールドとメソッドは　メンバ　と総称。命名ルールとして以下参照
 	 * クラス名　　　名詞　頭大文字
@@ -11,7 +11,7 @@ public class Java8hero {
 	int hp;      //HPの宣言
 	
 	//操作の定義
-	public void attak(){
+	public void attack(){
 		
 	}
 	public void sleep() {
@@ -20,14 +20,14 @@ public class Java8hero {
 	}
 	public void sit (int sec) {//座る。引数により座る秒数取得。秒数分回復
 		this.hp += sec;
-		System.out.println(this.name + "は、" + sec + "秒座った！\nHPが" + sec + "回復した");
+		System.out.println(this.name + "は、" + sec + "秒座った！\nHPが" + sec + "ポイント回復した");
 	}
 	public void slip() {//転ぶ
 		this.hp -= 5;
 		System.out.println(this.name + "は、転んだ！\n5のダメージ！");
 	}
 	public void run() {//逃げる
-		System.out.println(this.name + " は、逃げ出した！\nGAMEOVER\n最終HPは" + this.hp + "でした");
+		System.out.println(this.name + "は、逃げ出した！\nGAMEOVER\n最終HPは" + this.hp + "でした");
 	}
 
 }
