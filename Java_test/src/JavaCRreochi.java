@@ -1,6 +1,6 @@
 
 public class JavaCRreochi {
-
+//CRれおっち
 	public static void main(String[] args) {
 		int win = 0;
 		for (int i = 0;;i++) {
