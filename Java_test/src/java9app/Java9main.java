@@ -23,6 +23,9 @@ public class Java9main {
 		w.heal(h2);
 		w2.meiso();
 		
+		//練習問題
+		//値渡し、参照渡しの再確認の問題。要注意。
+		
 	}
 
 }
