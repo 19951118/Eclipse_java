@@ -6,8 +6,8 @@ public class Hero {
 	//戦う
 	public void attack(Matango m) {
 		System.out.println(this.name + "の攻撃！");
-		m.hp -= 5;
 		System.out.println("5ポイントのダメージを与えた！");
+		m.hp -= 5;
 	}
 	public final void slip() {//finalが付いているメソッドはオーバーライドが禁止になる。クラスも同様である
 		this.hp -= 5;
