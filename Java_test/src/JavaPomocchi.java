@@ -3,12 +3,16 @@ public class JavaPomocchi {
 //P　javaから始めるおもち生活　鬼がかりVer.1/319 
 	public static void main(String[] args) {
 		System.out.println("軍資金を入力してください");
-		int money = new java.util.Scanner(System.in).nextInt();
+		//下記これのエラー出ない書き方　int money = new java.util.Scanner(System.in).nextInt();
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+        int money = scanner.nextInt();
+        System.out.println("500円あたりの回転数は？");
+        int kaiten = scanner.nextInt();
+        scanner.close();
+        
 		if(money < 500) {
 			System.out.println("お金を稼いでからまた来てね！");
 		}else {
-			System.out.println("500円辺り何回転の台？");
-			int kaiten = new java.util.Scanner(System.in).nextInt();
 			int dedama = 0;
 			int win = 0;
 			money -= 500;
@@ -27,7 +31,7 @@ public class JavaPomocchi {
 					if(44 < fever) {
 						int renchan = 1;
 						dedama += 3000;
-						System.out.println("鬼がかり3000！\n 出玉"+ dedama + "発");
+						System.out.println("鬼がかり3000！\n 出玉"+ dedama + "発\n鬼がかりラッシュ突入！");
 						//フィーバーモード1/100を144回
 						for(int n = 0; n < 144; n++) {
 							int migiuti = new java.util.Random().nextInt(100);
